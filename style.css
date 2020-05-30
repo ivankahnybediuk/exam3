@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+.active {
+  border-bottom: 2px solid black;
+}
+
 .header {
   background-image: url(img/header.png);
   background-position: center;
@@ -298,5 +302,65 @@
   margin-bottom: 20px;
   width: 510px;
   height: 60px;
+}
+
+.second__about__toggle__title {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: #1c1c1b;
+  text-transform: uppercase;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 10% 65px 10%;
+  border-bottom: 2px solid #ced6af;
+}
+
+.second__about__toggle__title div {
+  width: 22%;
+}
+
+.second__about__toggle__title div:hover {
+  border-bottom: 2px solid black;
+}
+
+.second__about__toggle__articles {
+  width: 80%;
+  margin: 0 10% 65px 10%;
+}
+
+.second__about__toggle__articles__2 {
+  display: none;
+}
+
+.second__about__toggle__articles__3 {
+  display: none;
+}
+
+.second__about__toggle__articles h1 {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  margin-top: 55px;
+}
+
+.second__about__toggle__articles p {
+  font-size: 18px;
+  font-family: "Oswald";
+  color: #6e774a;
+  margin-bottom: 45px;
+}
+
+.second__about__toggle__articles img {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

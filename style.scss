@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.active{
+    border-bottom: 2px solid black;
+}
 
 .header{
     background-image: url(img/header.png);
@@ -239,5 +241,53 @@
             }
         
         } 
+        &__toggle{
+            &__title{
+                font-size: 30px;
+                font-family: "Oswald";
+                color: rgb(28, 28, 27);
+                text-transform: uppercase;
+                text-align: left;   
+                display: flex; 
+                justify-content: space-between;    
+                flex-wrap: nowrap;
+                width: 80%;
+                margin: 0 10% 65px 10%;
+                border-bottom: 2px solid #ced6af;
+                div{
+                    width: 22%;
+                    &:hover{
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+            &__articles{
+                width: 80%;
+                margin: 0 10% 65px 10%;
+                &__2{
+                    display:none
+                }
+                &__3{
+                    display: none
+                }
+                h1{
+                    font-size: 24px;
+                    font-family: "Oswald";
+                    color: rgb(0, 0, 0);
+                    text-transform: uppercase;  
+                    margin-bottom: 45px;  
+                    margin-top: 55px;       
+                }
+                p{
+                    font-size: 18px;
+                    font-family: "Oswald";
+                    color: rgb(110, 119, 74); 
+                    margin-bottom: 45px;
+                }
+                img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
 }
