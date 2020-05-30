@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap");
 * {
   font-family: 'Oswald', sans-serif;
   margin: 0;
@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 1070px;
   margin: 0;
 }
 
@@ -38,6 +38,8 @@
   margin: 0;
   position: fixed;
   background-color: rgba(63, 78, 66, 0.301);
+  -webkit-box-shadow: 0px 10px 20px rgba(29, 28, 28, 0.445);
+          box-shadow: 0px 10px 20px rgba(29, 28, 28, 0.445);
 }
 
 .header__menu__items {
@@ -51,6 +53,7 @@
 
 .header__menu__items__link {
   color: white;
+  position: relative;
 }
 
 .header__menu__items__link:hover {
@@ -58,6 +61,8 @@
   color: white;
   border-bottom: 1px solid white;
   font-weight: 900;
+  -webkit-box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.39);
+          box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.39);
 }
 
 .header__menu__logo {
@@ -119,5 +124,179 @@
   border-bottom: 1px solid white;
   font-weight: 900;
   text-decoration: underline;
+}
+
+.header__vertical {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 26px;
+  font-family: "Oswald";
+  color: white;
+  text-transform: uppercase;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  position: absolute;
+  top: 1070px;
+  left: 60px;
+}
+
+.header__vertical svg {
+  stroke: white;
+  width: 100px;
+}
+
+.header__text {
+  max-width: 650px;
+  height: 360px;
+  position: absolute;
+  top: 390px;
+  left: 845px;
+}
+
+.header__text h1 {
+  font-size: 55px;
+  font-family: "Oswald";
+  color: #f7f8f3;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 10pt;
+  line-height: 75pt;
+}
+
+.header__text h2 {
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #f7f8f3;
+  text-align: right;
+  letter-spacing: 3pt;
+  margin-bottom: 55px;
+}
+
+.header__text__btn {
+  font-size: 20px;
+  font-family: "Oswald";
+  color: white;
+  text-transform: uppercase;
+  stroke: white;
+  width: 270px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: white 1px solid;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 35px;
+}
+
+.header__text__btn svg {
+  width: 50px;
+  margin-left: 15px;
+}
+
+.header__text__btn:hover {
+  border: 2px white solid;
+  -webkit-box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
+          box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
+}
+
+.header__text__products-link {
+  text-align: right;
+}
+
+.header__text__products-link a {
+  font-size: 18px;
+  font-family: "Oswald";
+  color: #f7f8f3;
+  text-align: right;
+  font-weight: 200;
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.header__text__products-link a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  -webkit-box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.178);
+          box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.178);
+}
+
+.header__arrow {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 1000px;
+}
+
+.header__arrow i:hover {
+  font-size: 40px;
+}
+
+.second {
+  background-color: #f7f8f3;
+}
+
+.second__about {
+  height: 1315px;
+}
+
+.second__about__table {
+  height: 420px;
+  position: relative;
+}
+
+.second__about__table img {
+  width: 690px;
+  height: 200px;
+  margin: 100px 20% 100px 20%;
+}
+
+.second__about__table__logos {
+  width: 660px;
+  height: 180px;
+  margin-right: 0;
+  position: absolute;
+  top: 100px;
+  left: 21%;
+}
+
+.second__about__table__logos p {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #1c1c1b;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.second__about__table__logos img {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 510px;
+  height: 60px;
 }
 /*# sourceMappingURL=style.css.map */
