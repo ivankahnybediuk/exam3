@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+* {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-image: url(img/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin: 0;
+}
+
+.header__menu {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  height: 80px;
+  width: 100%;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  position: fixed;
+  background-color: rgba(63, 78, 66, 0.301);
+}
+
+.header__menu__items {
+  width: 415px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__menu__items__link {
+  color: white;
+}
+
+.header__menu__items__link:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+}
+
+.header__menu__logo {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: white;
+  width: 60px;
+}
+
+.header__menu__user {
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.header__menu__user__login {
+  padding-top: 30px;
+  width: 33%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.header__menu__user__login:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.header__menu__user__search {
+  padding-top: 30px;
+}
+
+.header__menu__user__search:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.header__menu__user__cart {
+  padding-top: 30px;
+  width: 33%;
+  border-left: 1px solid white;
+}
+
+.header__menu__user__cart:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

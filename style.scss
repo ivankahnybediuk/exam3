@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-image: url(img/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin: 0;
+    &__menu{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;   
+        border-bottom: 1px solid rgb(255, 255, 255);  
+        height: 80px;   
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        position: fixed;
+        background-color: rgba(63, 78, 66, 0.301);
+        &__items{
+            width: 415px;
+            display: flex;
+            justify-content: space-around;
+            &__link{
+                color: rgb(255, 255, 255);
+                &:hover{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    border-bottom: 1px solid white;
+                    font-weight: 900;
+                }
+            }
+        }
+        &__logo{
+            font-size: 30px;
+            font-family: "Oswald";
+            color: rgb(255, 255, 255); 
+            width: 60px;  
+        }
+        &__user{
+            width: 370px;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            align-content: center;
+            text-align: center;
+            &__login{
+                padding-top: 30px;
+                width: 33%;
+                border-left: 1px solid  rgb(255, 255, 255) ;
+                border-right: 1px solid  rgb(255, 255, 255) ;
+                &:hover{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    border-bottom: 1px solid white;
+                    font-weight: 900;
+                    text-decoration: underline;
+                }
+            }
+            &__search{
+                padding-top: 30px;
+                &:hover{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    border-bottom: 1px solid white;
+                    font-weight: 900;
+                    text-decoration: underline;
+                }
+            }
+
+            &__cart{
+                padding-top: 30px;
+                width: 33%;
+                border-left: 1px solid  rgb(255, 255, 255) ;
+                &:hover{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    border-bottom: 1px solid white;
+                    font-weight: 900;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
