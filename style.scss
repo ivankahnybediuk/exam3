@@ -3,15 +3,15 @@
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 .active{
     border-bottom: 2px solid black;
 }
 
 body{
-    background-color: #f7f8f3;
-}
+    background-color: #f7f8f3!;
+
 .header{
     background-image: url(img/header.png);
     background-position: center;
@@ -383,5 +383,69 @@ body{
             }
         }
     }
+    &__faqs{
+        h1{
+            font-size: 30px;
+            font-family: "Oswald";
+            color: rgb(28, 28, 27);
+            text-transform: uppercase;
+            text-align: center;    
+            margin-bottom: 50px;        
+        }
+        &__akordeon{
+            margin-left:35%;
+            margin-right: 35%;
+            border-bottom: 2px solid rgb(110, 119, 74); 
+            &__title{
+                font-size: 18px;
+                font-family: "Oswald";
+                color: rgb(110, 119, 74);
+                text-align: left;
+                border-top: 2px solid rgb(110, 119, 74);     
+                padding: 20px 0 20px 0;
+                letter-spacing: 4pt;
+                font-weight: 200;
+            }
+            &__article{
+                font-size: 18px;
+                font-family: "Oswald";
+                color: rgb(0, 0, 0);
+                line-height: 2.222;
+                text-align: left;  
+                padding: 45px 50px;
+                display:none;  
+                font-weight: 200;            
+            }
+        }
+    }
     
+}
+.reviews{
+    background-color: #f7f8f3;
+    height: 800px;
+    position: relative;
+    &__vertical{
+        transform: rotate(90deg);
+        transform-origin: left bottom ;
+        font-size: 24px;
+        font-family: "Oswald";
+        color: rgb(247, 248, 243);
+        text-transform: uppercase;
+        line-height: 2.5;  
+        z-index:10;
+        position: absolute;  
+    }
+    &__slider{
+        margin-top: 150px;
+        width: 100%;
+        height: 800px;
+        &__item{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 800px;
+            }
+        }
+    }
+}
 }

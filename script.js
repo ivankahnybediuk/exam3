@@ -26,17 +26,27 @@ $(".second__about__toggle__title__3").on("click", function(){
     $(this).addClass("active");
 })
 
-// ================== Slider======================
+
 $(document).ready(function(){
+    // ================== Slider products======================
 $('.second__products__slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1, 
     prevArrow: (".arrowP"),
-    nextArrow: (".arrowN")
+    nextArrow: (".arrowN"),
+    autoplay: true
   });
 
+//   ====================Akordeon==================================
 
+$(document).ready(function() {
+    $('.second__faqs__akordeon__title').on('click', function(){
+      $('.second__faqs__akordeon__article').not($(this).next()).slideUp(500);
+      $(this).next().slideToggle(500)
+    })
+})
+ 
 
 
 

@@ -3,8 +3,6 @@
   font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .active {
@@ -15,7 +13,7 @@ body {
   background-color: #f7f8f3;
 }
 
-.header {
+body .header {
   background-image: url(img/header.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +22,7 @@ body {
   margin: 0;
 }
 
-.header__menu {
+body .header__menu {
   font-size: 16px;
   color: white;
   text-transform: uppercase;
@@ -51,7 +49,7 @@ body {
           box-shadow: 0px 10px 20px rgba(29, 28, 28, 0.445);
 }
 
-.header__menu__items {
+body .header__menu__items {
   width: 415px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,12 +58,12 @@ body {
       justify-content: space-around;
 }
 
-.header__menu__items__link {
+body .header__menu__items__link {
   color: white;
   position: relative;
 }
 
-.header__menu__items__link:hover {
+body .header__menu__items__link:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -74,14 +72,14 @@ body {
           box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.39);
 }
 
-.header__menu__logo {
+body .header__menu__logo {
   font-size: 30px;
   font-family: "Oswald";
   color: white;
   width: 60px;
 }
 
-.header__menu__user {
+body .header__menu__user {
   width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,14 +92,14 @@ body {
   text-align: center;
 }
 
-.header__menu__user__login {
+body .header__menu__user__login {
   padding-top: 30px;
   width: 33%;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
-.header__menu__user__login:hover {
+body .header__menu__user__login:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -109,11 +107,11 @@ body {
   text-decoration: underline;
 }
 
-.header__menu__user__search {
+body .header__menu__user__search {
   padding-top: 30px;
 }
 
-.header__menu__user__search:hover {
+body .header__menu__user__search:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -121,13 +119,13 @@ body {
   text-decoration: underline;
 }
 
-.header__menu__user__cart {
+body .header__menu__user__cart {
   padding-top: 30px;
   width: 33%;
   border-left: 1px solid white;
 }
 
-.header__menu__user__cart:hover {
+body .header__menu__user__cart:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -135,7 +133,7 @@ body {
   text-decoration: underline;
 }
 
-.header__vertical {
+body .header__vertical {
   width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,12 +154,12 @@ body {
   left: 60px;
 }
 
-.header__vertical svg {
+body .header__vertical svg {
   stroke: white;
   width: 100px;
 }
 
-.header__text {
+body .header__text {
   max-width: 650px;
   height: 360px;
   position: absolute;
@@ -169,7 +167,7 @@ body {
   left: 845px;
 }
 
-.header__text h1 {
+body .header__text h1 {
   font-size: 55px;
   font-family: "Oswald";
   color: #f7f8f3;
@@ -179,7 +177,7 @@ body {
   line-height: 75pt;
 }
 
-.header__text h2 {
+body .header__text h2 {
   font-weight: 200;
   font-size: 24px;
   font-family: "Oswald";
@@ -189,7 +187,7 @@ body {
   margin-bottom: 55px;
 }
 
-.header__text__btn {
+body .header__text__btn {
   font-size: 20px;
   font-family: "Oswald";
   color: white;
@@ -214,22 +212,22 @@ body {
   margin-bottom: 35px;
 }
 
-.header__text__btn svg {
+body .header__text__btn svg {
   width: 50px;
   margin-left: 15px;
 }
 
-.header__text__btn:hover {
+body .header__text__btn:hover {
   border: 2px white solid;
   -webkit-box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
           box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
 }
 
-.header__text__products-link {
+body .header__text__products-link {
   text-align: right;
 }
 
-.header__text__products-link a {
+body .header__text__products-link a {
   font-size: 18px;
   font-family: "Oswald";
   color: #f7f8f3;
@@ -240,7 +238,7 @@ body {
   padding: 5px;
 }
 
-.header__text__products-link a:hover {
+body .header__text__products-link a:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -249,7 +247,7 @@ body {
           box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.178);
 }
 
-.header__arrow {
+body .header__arrow {
   color: white;
   font-size: 30px;
   text-align: center;
@@ -258,30 +256,30 @@ body {
   top: 1000px;
 }
 
-.header__arrow i:hover {
+body .header__arrow i:hover {
   font-size: 40px;
 }
 
-.second {
+body .second {
   background-color: #f7f8f3;
 }
 
-.second__about {
+body .second__about {
   height: 1315px;
 }
 
-.second__about__table {
+body .second__about__table {
   height: 420px;
   position: relative;
 }
 
-.second__about__table img {
+body .second__about__table img {
   width: 690px;
   height: 200px;
   margin: 100px 20% 100px 20%;
 }
 
-.second__about__table__logos {
+body .second__about__table__logos {
   width: 660px;
   height: 180px;
   margin-right: 0;
@@ -290,7 +288,7 @@ body {
   left: 21%;
 }
 
-.second__about__table__logos p {
+body .second__about__table__logos p {
   font-size: 24px;
   font-family: "Oswald";
   color: #1c1c1b;
@@ -300,7 +298,7 @@ body {
   margin-bottom: 20px;
 }
 
-.second__about__table__logos img {
+body .second__about__table__logos img {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 0;
@@ -309,7 +307,7 @@ body {
   height: 60px;
 }
 
-.second__about__toggle__title {
+body .second__about__toggle__title {
   font-size: 30px;
   font-family: "Oswald";
   color: #1c1c1b;
@@ -328,28 +326,28 @@ body {
   border-bottom: 2px solid #ced6af;
 }
 
-.second__about__toggle__title div {
+body .second__about__toggle__title div {
   width: 22%;
 }
 
-.second__about__toggle__title div:hover {
+body .second__about__toggle__title div:hover {
   border-bottom: 2px solid black;
 }
 
-.second__about__toggle__articles {
+body .second__about__toggle__articles {
   width: 80%;
   margin: 0 10% 65px 10%;
 }
 
-.second__about__toggle__articles__2 {
+body .second__about__toggle__articles__2 {
   display: none;
 }
 
-.second__about__toggle__articles__3 {
+body .second__about__toggle__articles__3 {
   display: none;
 }
 
-.second__about__toggle__articles h1 {
+body .second__about__toggle__articles h1 {
   font-size: 24px;
   font-family: "Oswald";
   color: black;
@@ -358,18 +356,18 @@ body {
   margin-top: 55px;
 }
 
-.second__about__toggle__articles p {
+body .second__about__toggle__articles p {
   font-size: 18px;
   font-family: "Oswald";
   color: #6e774a;
   margin-bottom: 45px;
 }
 
-.second__about__toggle__articles img {
+body .second__about__toggle__articles img {
   margin-bottom: 30px;
 }
 
-.second__products__title {
+body .second__products__title {
   font-size: 30px;
   font-family: "Oswald";
   color: #1c1c1b;
@@ -378,43 +376,43 @@ body {
   margin: 0 auto 75px;
 }
 
-.second__products__slider {
+body .second__products__slider {
   margin-bottom: 55px;
 }
 
-.second__products__slider__item {
+body .second__products__slider__item {
   width: 605px;
   height: 500px;
   margin-right: 22px;
   margin-left: 22px;
 }
 
-.second__products__slider__item__main-block {
+body .second__products__slider__item__main-block {
   height: 430px;
   background-color: white;
   border: 2px solid #ced6af;
   text-align: center;
 }
 
-.second__products__slider__item__main-block__stars {
+body .second__products__slider__item__main-block__stars {
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 15px;
   color: #6e774a;
 }
 
-.second__products__slider__item__main-block p {
+body .second__products__slider__item__main-block p {
   font-size: 18px;
   font-family: "Oswald";
   color: #1c1c1b;
   text-transform: uppercase;
 }
 
-.second__products__slider__item__main-block img {
+body .second__products__slider__item__main-block img {
   margin: 40px auto auto auto;
 }
 
-.second__products__slider__item__buy-block {
+body .second__products__slider__item__buy-block {
   height: 70px;
   background-color: #f1f1f1;
   border: 2px solid #e1e1e1;
@@ -429,12 +427,12 @@ body {
           justify-content: space-between;
 }
 
-.second__products__slider__item__buy-block p {
+body .second__products__slider__item__buy-block p {
   font-size: 18px;
   margin: 26px 20px;
 }
 
-.second__products__slider__item__buy-block__btn {
+body .second__products__slider__item__buy-block__btn {
   padding: 6%;
   font-size: 20px;
   font-family: "Oswald";
@@ -456,17 +454,17 @@ body {
           align-items: center;
 }
 
-.second__products__slider__item__buy-block__btn svg {
+body .second__products__slider__item__buy-block__btn svg {
   width: 40px;
 }
 
-.second__products__slider__item__buy-block__btn:hover {
+body .second__products__slider__item__buy-block__btn:hover {
   border: 2px white solid;
   -webkit-box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
           box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.377);
 }
 
-.second__products__arrows {
+body .second__products__arrows {
   color: #6e774a;
   width: 100px;
   height: 100px;
@@ -483,7 +481,80 @@ body {
   margin-bottom: 135px;
 }
 
-.second__products__arrows .arrowP {
+body .second__products__arrows .arrowP {
   margin-right: 60px;
+}
+
+body .second__faqs h1 {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: #1c1c1b;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .second__faqs__akordeon {
+  margin-left: 35%;
+  margin-right: 35%;
+  border-bottom: 2px solid #6e774a;
+}
+
+body .second__faqs__akordeon__title {
+  font-size: 18px;
+  font-family: "Oswald";
+  color: #6e774a;
+  text-align: left;
+  border-top: 2px solid #6e774a;
+  padding: 20px 0 20px 0;
+  letter-spacing: 4pt;
+  font-weight: 200;
+}
+
+body .second__faqs__akordeon__article {
+  font-size: 18px;
+  font-family: "Oswald";
+  color: black;
+  line-height: 2.222;
+  text-align: left;
+  padding: 45px 50px;
+  display: none;
+  font-weight: 200;
+}
+
+body .reviews {
+  background-color: #f7f8f3;
+  height: 800px;
+  position: relative;
+}
+
+body .reviews__vertical {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #f7f8f3;
+  text-transform: uppercase;
+  line-height: 2.5;
+  z-index: 10;
+  letter-spacing: 3pt;
+  position: absolute;
+}
+
+body .reviews__slider {
+  margin-top: 150px;
+  width: 100%;
+  height: 800px;
+}
+
+body .reviews__slider__item {
+  width: 100%;
+}
+
+body .reviews__slider__item img {
+  width: 100%;
+  height: 800px;
 }
 /*# sourceMappingURL=style.css.map */
