@@ -940,7 +940,7 @@ body .reviews__slider__item__text {
   font-family: "Oswald";
   color: #f7f8f3;
   letter-spacing: 3pt;
-  line-height: 2.5;
+  line-height: 2;
   width: 40%;
   text-align: center;
   position: absolute;
@@ -1002,7 +1002,7 @@ body .reviews__slider__item__author {
 
 @media screen and (max-width: 1250px) {
   body .reviews__slider__item__author {
-    top: 50%;
+    top: 55%;
     font-size: 18px;
   }
 }
