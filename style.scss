@@ -424,7 +424,7 @@ body{
     background-color: #f7f8f3;
     height: 800px;
     position: relative;
-    margin-bottom: 170px;
+    margin-bottom: 165px;
     &__vertical{
         transform: rotate(90deg);
         transform-origin: left bottom ;
@@ -504,5 +504,125 @@ body{
             color: white;
         }
     }
+}
+.footer{
+    &__container{
+        &__link-wrapper-left{
+            text-align: center;  
+            border-top: 2px solid rgb(110, 119, 74) ;  
+            padding-top: 85px;  
+            margin-top: 35px;
+            div{
+                padding:15px;
+                a{
+                    font-size: 14px;
+                    font-family: "Oswald";
+                    color: rgb(110, 119, 74);
+                    text-transform: uppercase;
+                }
+            }       
+        }
+        &__link-wrapper-right{
+            font-size: 14px;
+            font-family: "Oswald";
+            color: rgb(110, 119, 74);
+            text-transform: uppercase;
+            text-align: center;  
+            border-top: 2px solid rgb(110, 119, 74) ;     
+            padding-top: 85px;   
+            margin-top: 35px;    
+            div{
+                padding:15px;
+                a{
+                    font-size: 14px;
+                    font-family: "Oswald";
+                    color: rgb(110, 119, 74);
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &__center-block{
+            h1{
+                font-size: 60px;
+                font-family: "Oswald";
+                color: rgb(110, 119, 74);    
+                text-align: center;  
+                margin-bottom: 60px;         
+            }
+            &__social{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin-bottom: 40px;
+                a{
+                    font-size: 20px;
+                    color: rgb(110, 119, 74); 
+                }
+            }
+            svg{
+                stroke:rgb(110, 119, 74) ;
+                transform: rotate(90deg);
+                width: 55px;
+                stroke-width: 5px;
+                margin: 40px 41% 25px 41%;
+            }
+            h2{
+                font-size: 18px;
+                font-family: "Oswald";
+                color: rgb(28, 28, 27);
+                text-transform: uppercase;
+                line-height: 4.167;
+                text-align: center;   
+                letter-spacing: 3pt;    
+            }
+            &__email{
+                border: rgb(110, 119, 74) 2px solid;
+                width: 370px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                margin-bottom: 60px;
+                input{
+                    width: 290px;
+                    height: 60px;
+                    color: #6e774a;
+                    border: none;
+                    border-right: rgb(110, 119, 74) 2px solid;
+                    padding-left: 35px;
+                    font-size: 16px;
+                    font-family: "Oswald";
+                     color: rgb(110, 119, 74);
+                     line-height: 4.688;    
+                     letter-spacing: 2pt;   
+                     background-color: #f7f8f3;             
+                }
+                button{
+                    width: 80px;
+                    height: 60px;
+                    border: transparent;
+                    color: #6e774a;
+                    background-color: transparent;
+                    font-size: 30px;
+                }
+            }
+            &__c{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                p{
+                    margin:20px;
+                    letter-spacing: 3pt;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
 }
 }
