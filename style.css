@@ -1249,9 +1249,9 @@ body .modal-window-login {
   display: none;
   position: fixed;
   top: 20%;
-  left: 33%;
-  width: 600px;
-  height: 600px;
+  left: 30%;
+  width: 40%;
+  height: 80%;
   z-index: 20;
   background-color: #f7f8f3;
   border: #6e774a 2px solid;
@@ -1264,10 +1264,33 @@ body .modal-window-login {
   padding: 30px;
 }
 
+@media screen and (max-width: 1000px) {
+  body .modal-window-login {
+    width: 70%;
+    left: 15%;
+    top: 13%;
+    font-size: 23px;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body .modal-window-login {
+    font-size: 15px;
+    height: 60%;
+  }
+}
+
 body .modal-window-login p {
   font-size: 40px;
   text-align: center;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  body .modal-window-login p {
+    margin-bottom: 20px;
+  }
 }
 
 body .modal-window-login form {
@@ -1293,16 +1316,29 @@ body .modal-window-login form input {
   background-color: #f7f8f3;
 }
 
+@media screen and (max-width: 1000px) {
+  body .modal-window-login form input {
+    margin: 10px;
+    height: 50px;
+  }
+}
+
 body .modal-window-login form button {
   background-color: #6e774a;
-  width: 200px;
-  height: 80px;
+  width: 30%;
+  height: 40px;
   color: #f7f8f3;
   border-radius: 20px;
   -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.185);
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.185);
   border: none;
-  margin: 30px auto auto 300px;
+  margin: 5% auto auto 60%;
+}
+
+@media screen and (max-width: 768px) {
+  body .modal-window-login form button {
+    margin: 2% auto auto 60%;
+  }
 }
 
 body .footer-md {
