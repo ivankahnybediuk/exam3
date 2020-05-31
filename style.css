@@ -133,6 +133,33 @@ body .header__menu__user__cart:hover {
   text-decoration: underline;
 }
 
+body .header__menu__user__search-box {
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  display: none;
+}
+
+body .header__menu__user__search-box input {
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  font-family: "Oswald";
+  color: #6e774a;
+  border: 2px #6e774a solid;
+  border-radius: 10px;
+}
+
+body .header__menu__user__search-box button {
+  width: 15%;
+  color: white;
+  background-color: #6e774a;
+  height: 50px;
+  border-radius: 50%;
+  border: transparent;
+  font-size: 20px;
+}
+
 body .header__vertical {
   width: 350px;
   display: -webkit-box;
@@ -773,5 +800,75 @@ body .footer__container__center-block__c p {
   margin: 20px;
   letter-spacing: 3pt;
   text-align: center;
+}
+
+body .filter {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #6e774aa6;
+  display: none;
+}
+
+body .modal-window-login {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 33%;
+  width: 600px;
+  height: 600px;
+  z-index: 20;
+  background-color: #f7f8f3;
+  border: #6e774a 2px solid;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.479);
+          box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.479);
+  font-size: 30px;
+  font-family: "Oswald";
+  color: #6e774a;
+  padding: 30px;
+}
+
+body .modal-window-login p {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body .modal-window-login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+body .modal-window-login form input {
+  margin: 20px;
+  height: 70px;
+  border-radius: 10px;
+  border: #6e774a 2px solid;
+  color: #6e774a;
+  padding-left: 20px;
+  background-color: #f7f8f3;
+}
+
+body .modal-window-login form button {
+  background-color: #6e774a;
+  width: 200px;
+  height: 80px;
+  color: #f7f8f3;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.185);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.185);
+  border: none;
+  margin: 30px auto auto 300px;
 }
 /*# sourceMappingURL=style.css.map */

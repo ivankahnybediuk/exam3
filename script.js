@@ -63,5 +63,31 @@ $('.second__products__slider').slick({
         $('body,html').animate({scrollTop: top}, 2000);
     });
 
+    // ======================Login=============================
+$(".header__menu__user__login").on("click", function(){
+    $(".filter").css("display", "block");
+    $(".modal-window-login").css("display", "block");  
+})
+$(".filter").on("click", function(){
+    $(".filter").css("display", "none");
+    $(".modal-window-login").css("display", "none");  
+})
+$(".submit-login").on("click", function(){
+    $(".filter").css("display", "none");
+    $(".modal-window-login").css("display", "none");  
+})
+$(".header__menu__user__search").on("click", function(){
+    $(".header__menu__user__login").css("display", "none");
+    $(".header__menu__user__search").css("display", "none");  
+    $(".header__menu__user__cart").css("display", "none");
+    $(".header__menu__user__search-box").css("display", "block");
+})
+$(".header__menu__user__search-box button").on("click", function(){
+    event.preventDefault();
+    $(".header__menu__user__login").css("display", "block");
+    $(".header__menu__user__search").css("display", "block");  
+    $(".header__menu__user__cart").css("display", "block");
+    $(".header__menu__user__search-box").css("display", "none");
+})
 
 })
