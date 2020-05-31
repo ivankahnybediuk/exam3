@@ -35,7 +35,26 @@ $('.second__products__slider').slick({
     slidesToScroll: 1, 
     prevArrow: (".arrowP"),
     nextArrow: (".arrowN"),
-    autoplay: true
+    autoplay: true,
+    adaptiveHeigth:true,
+    responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          }
+    ]
   });
 
 //   ====================Akordeon==================================
