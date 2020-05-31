@@ -85,6 +85,12 @@ body .header__menu__items__link:hover {
           box-shadow: 10px 6px 10px rgba(245, 245, 245, 0.39);
 }
 
+@media screen and (max-width: 768px) {
+  body .header__menu__items {
+    display: none;
+  }
+}
+
 body .header__menu__logo {
   font-size: 30px;
   font-family: "Oswald";
@@ -103,6 +109,12 @@ body .header__menu__user {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .header__menu__user {
+    width: 80%;
+  }
 }
 
 body .header__menu__user__login {
@@ -127,6 +139,7 @@ body .header__menu__user__login:hover {
 }
 
 body .header__menu__user__search {
+  width: 33%;
   padding-top: 30px;
 }
 
@@ -153,6 +166,7 @@ body .header__menu__user__cart {
 @media screen and (max-width: 768px) {
   body .header__menu__user__cart {
     padding-top: 20px;
+    border-right: 1px solid white;
   }
 }
 
@@ -196,6 +210,20 @@ body .header__menu__user__search-box button {
   border-radius: 50%;
   border: transparent;
   font-size: 20px;
+}
+
+body .header__menu__user__burger {
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 5px;
+  padding-top: 0;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body .header__menu__user__burger {
+    display: block;
+  }
 }
 
 body .header__vertical {
@@ -1418,5 +1446,39 @@ body .footer-md__c p {
   margin: 20px;
   letter-spacing: 3pt;
   text-align: center;
+}
+
+body .burger {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(110, 119, 74, 0.842);
+  margin-top: 60px;
+}
+
+body .burger__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  z-index: 30;
+}
+
+body .burger__items__link {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

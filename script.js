@@ -81,6 +81,12 @@ $('.second__products__slider').slick({
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 2000);
     });
+    $(".burger").on("click","a", function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2000);
+    });
 
     // ======================Login=============================
 $(".header__menu__user__login").on("click", function(){
@@ -109,4 +115,11 @@ $(".header__menu__user__search-box button").on("click", function(){
     $(".header__menu__user__search-box").css("display", "none");
 })
 
+})
+// ==================Burger====================
+$(".header__menu__user__burger").on("click", function(){
+    $(".burger").css("display", "block")
+});
+$(".burger").on("click", function(){
+    $(".burger").css("display", "none")
 })
