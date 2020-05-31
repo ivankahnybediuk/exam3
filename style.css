@@ -526,6 +526,7 @@ body .reviews {
   background-color: #f7f8f3;
   height: 800px;
   position: relative;
+  margin-bottom: 170px;
 }
 
 body .reviews__vertical {
@@ -539,8 +540,11 @@ body .reviews__vertical {
   text-transform: uppercase;
   line-height: 2.5;
   z-index: 10;
-  letter-spacing: 3pt;
   position: absolute;
+  font-weight: 200;
+  letter-spacing: 3pt;
+  top: 500px;
+  left: 20px;
 }
 
 body .reviews__slider {
@@ -551,10 +555,76 @@ body .reviews__slider {
 
 body .reviews__slider__item {
   width: 100%;
+  position: relative;
 }
 
 body .reviews__slider__item img {
   width: 100%;
   height: 800px;
+}
+
+body .reviews__slider__item__stars {
+  color: #aab384;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 260px;
+}
+
+body .reviews__slider__item__text {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #f7f8f3;
+  letter-spacing: 3pt;
+  line-height: 2.5;
+  width: 760px;
+  text-align: center;
+  position: absolute;
+  top: 320px;
+  left: 30%;
+}
+
+body .reviews__slider__item__author {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: white;
+  text-transform: uppercase;
+  line-height: 3.125;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  width: 10%;
+  top: 550px;
+  left: 45%;
+}
+
+body .reviews__slider__item__author svg {
+  stroke: white;
+  width: 45px;
+}
+
+body .reviews__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body .reviews__arrows div {
+  padding: 25px 40px;
+  border: 1px solid white;
+  font-size: 40px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

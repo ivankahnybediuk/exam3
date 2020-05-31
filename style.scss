@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #f7f8f3!;
+    background-color: #f7f8f3;
 
 .header{
     background-image: url(img/header.png);
@@ -424,6 +424,7 @@ body{
     background-color: #f7f8f3;
     height: 800px;
     position: relative;
+    margin-bottom: 170px;
     &__vertical{
         transform: rotate(90deg);
         transform-origin: left bottom ;
@@ -434,6 +435,10 @@ body{
         line-height: 2.5;  
         z-index:10;
         position: absolute;  
+        font-weight: 200;
+        letter-spacing: 3pt;
+        top: 500px;
+        left: 20px;
     }
     &__slider{
         margin-top: 150px;
@@ -441,10 +446,62 @@ body{
         height: 800px;
         &__item{
             width: 100%;
+            position: relative;
             img{
                 width: 100%;
                 height: 800px;
             }
+            &__stars{
+                color: #aab384;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                top: 260px;
+            }
+            &__text{
+                font-size: 24px;
+                font-family: "Oswald";
+                color: rgb(247, 248, 243);
+                letter-spacing: 3pt;
+                 line-height: 2.5;    
+                 width: 760px;
+                 text-align: center;
+                 position: absolute;
+                 top:320px;
+                 left:30%;
+            }
+            &__author{
+                font-size: 24px;
+                font-family: "Oswald";
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 3.125;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                position: absolute;  
+                width: 10%; 
+                top: 550px;
+                left: 45%;
+                svg{
+                    stroke: rgb(255, 255, 255);
+                    width: 45px;
+                }           
+            }
+        }
+    }
+    &__arrows{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        div{
+            padding: 25px 40px; 
+            border: 1px solid white;
+            font-size: 40px;
+            color: white;
         }
     }
 }

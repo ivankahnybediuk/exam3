@@ -14,13 +14,13 @@
 </head>
 <body>
 
-    <div class="container-fluid pl-0 pr-0 header">
+    <div id = "header" class="container-fluid pl-0 pr-0 header ">
         <div class="header__menu">
             <div class="header__menu__items"">
-             <a class="header__menu__items__link" href="#">Home</a>
-             <a class="header__menu__items__link" href="#">Products</a>
-             <a class="header__menu__items__link" href="#">Faqs</a>
-             <a class="header__menu__items__link" href="#">Contact us</a>   
+             <a class="header__menu__items__link" href="#header">Home</a>
+             <a class="header__menu__items__link" href="#products">Products</a>
+             <a class="header__menu__items__link" href="#faqs">Faqs</a>
+             <a class="header__menu__items__link" href="#footer">Contact us</a>   
             </div>   
             <div class="header__menu__logo"">cbd</div>
             <div class="header__menu__user"">
@@ -36,19 +36,19 @@
         <div class=" header__text">
             <h1>Enhancing Life Excelling in Care</h1>
             <h2>Choose Wisely. Choose CBD.</h2>
-            <div class="header__text__btn">
+            <a href="#products" class="header__text__btn">
                 <div>start shoping</div>
                 <div ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 2"><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><line class="cls-1" y1="1" x2="95" y2="1"/></g></g></svg></div> 
-            </div> 
+            </a> 
             <div class="header__text__products-link">
-                <a href="#">see all products <i class="fas fa-arrow-right"></i></a>
+                <a href="#products">see all products <i class="fas fa-arrow-right"></i></a>
             </div>
 
         </div>
-        <div class="header__arrow" href="#"><i class="fas fa-chevron-down"></i></div>
+        <a class="header__arrow" href="#about"><i class="fas fa-chevron-down"></i></a>
     </div>
     <div class="container-fluid pl-0 pr-0 second">
-        <div class="container-lg second__about">
+        <div id="about" class="container-lg second__about">
             <div class="second__about__table">
                 <img src="img/logos_holder.svg.png" >
                 <div class="second__about__table__logos">
@@ -109,7 +109,7 @@
             </div>
             </div>
         </div>
-        <div class="second__products">
+        <div id ="products" class="second__products">
         <div class="second__products__title">
             сbd featured products
         </div>
@@ -175,7 +175,7 @@
             <div class="arrowN"><i class="fas fa-long-arrow-alt-right"></i></i></div>
         </div>
     </div>
-    <div class="second__faqs">
+    <div id = "faqs" class="second__faqs">
         <h1>Frequently asked question</h1>
         <div class="second__faqs__akordeon">
             <div class="second__faqs__akordeon__title"><i class="fas fa-plus"></i> What is Canabidiol(CBD)?</div>
@@ -195,9 +195,44 @@
         <div class="reviews__slider">
             <div class="reviews__slider__item">
                 <img src="img/reviews-bg.png" >
+                <div class="reviews__slider__item__stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                <div class="reviews__slider__item__text">I have tried another product after using this one successfully, and I am Back for good! The flavour, the lightness of the oil and the health benefits I have gotten with this oil are amazing!</div>
+                <div class="reviews__slider__item__author">
+                   <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 2"><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><line class="cls-1" y1="1" x2="95" y2="1"/></g></g></svg></div> 
+                   <div>Mark J.</div>
+                </div>
             </div>
-            <div class="reviews__slider__item"></div>
-            <div class="reviews__slider__item"></div>
+            <div class="reviews__slider__item">
+                <img src="img/review_2.jpg" >
+                <div class="reviews__slider__item__stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                <div class="reviews__slider__item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis necessitatibus maxime minima fugit nihil deserunt, earum ut blanditiis soluta eveniet debitis unde excepturi velit ratione alias fuga veniam eum voluptas?</div>
+                <div class="reviews__slider__item__author">
+                   <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 2"><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><line class="cls-1" y1="1" x2="95" y2="1"/></g></g></svg></div> 
+                   <div>Author</div>
+                </div>
+            </div>
+            <div class="reviews__slider__item">
+                <img src="img/review_3.jpg" >
+                <div class="reviews__slider__item__stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                <div class="reviews__slider__item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores eligendi nihil nulla tenetur quae excepturi, atque corrupti? Accusantium atque ex provident alias expedita iure molestiae iste eum pariatur velit?</div>
+                <div class="reviews__slider__item__author">
+                   <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 2"><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><line class="cls-1" y1="1" x2="95" y2="1"/></g></g></svg></div> 
+                   <div>Author</div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews__arrows">
+            <div class="rewiews__arrows__prev"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="rewiews__arrows__next"><i class="fas fa-long-arrow-alt-right"></i></div>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid l-0 pr-0  footer">
+        <div class="container-xl footer__container">
+            <div class="row">
+                <div class="col-lg-4 footer__container__link-wrapper-left"></div>
+                <div class="col-lg-4 footer__container__center-block"></div>
+                <div class="col-lg-4 footer__container__link-wrapper-right"></div>
+            </div>
         </div>
     </div>
     
