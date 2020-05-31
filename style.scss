@@ -150,8 +150,8 @@ body{
         max-width: 650px;
         height: 360px;
         position: absolute;
-        top: 390px;
-        left: 845px;
+        top: 30%;
+        left: 50%;
         h1{
             font-size: 55px;
             font-family: "Oswald";
@@ -160,6 +160,10 @@ body{
             text-align: right;    
             letter-spacing:10pt; 
             line-height: 75pt;
+            @media screen and (max-width:1115px){
+                font-size: 35px;
+                letter-spacing:3pt;
+            }
         }
         h2{
             font-weight: 200;

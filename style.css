@@ -190,8 +190,8 @@ body .header__text {
   max-width: 650px;
   height: 360px;
   position: absolute;
-  top: 390px;
-  left: 845px;
+  top: 30%;
+  left: 50%;
 }
 
 body .header__text h1 {
@@ -202,6 +202,13 @@ body .header__text h1 {
   text-align: right;
   letter-spacing: 10pt;
   line-height: 75pt;
+}
+
+@media screen and (max-width: 1115px) {
+  body .header__text h1 {
+    font-size: 35px;
+    letter-spacing: 3pt;
+  }
 }
 
 body .header__text h2 {
